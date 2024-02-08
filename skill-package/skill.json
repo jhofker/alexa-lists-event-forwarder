@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "List Sync",
+          "summary": "Alexa Shopping List Synchronization Skill",
+          "description": "This skill provides Alexa shopping list synchronization with a specified URL."
+        }
+      },
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "distributionMode": "PUBLIC",
+      "category": "ORGANIZERS_AND_ASSISTANTS"
+    },
+    "permissions": [
+      {
+        "name": "alexa::household:lists:read"
+      },
+      {
+        "name": "alexa::household:lists:write"
+      }
+    ],
+    "apis": {
+      "householdList": {}
+    },
+    "events": {
+      "subscriptions": [
+        {
+          "eventName": "SKILL_DISABLED"
+        },
+        {
+          "eventName": "SKILL_PERMISSION_ACCEPTED"
+        },
+        {
+          "eventName": "SKILL_PERMISSION_CHANGED"
+        },
+        {
+          "eventName": "ITEMS_CREATED"
+        },
+        {
+          "eventName": "ITEMS_UPDATED"
+        },
+        {
+          "eventName": "ITEMS_DELETED"
+        }
+      ]
+    }
+  }
+}
