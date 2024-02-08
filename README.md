@@ -62,23 +62,7 @@ Once created, take note of the OAuth2 credentials and update the Web Settings as
     ```
 
 3. Setup the skill account linking:
-    1. Create the skill account linking request file as `accountLinking.json`, adding your [LWA Security Profile](#login-with-amazon-security-profile) OAuth2 credentials:
-        ```json
-        {
-          "accountLinkingRequest": {
-            "skipOnEnablement": "false",
-            "type": "AUTH_CODE",
-            "authorizationUrl": "https://www.amazon.com/ap/oa",
-            "accessTokenUrl": "https://api.amazon.com/auth/o2/token",
-            "accessTokenScheme": "HTTP_BASIC",
-            "clientId": "<clientId>",
-            "clientSecret": "<clientSecret>",
-            "scopes": [
-              "profile"
-            ]
-          }
-        }
-        ```
+    1. Create the skill account linking request file as `accountLinking.json` by renaming `accountlinking.json.example` and adding your [LWA Security Profile](#login-with-amazon-security-profile) OAuth2 credentials:
 
     2. Update the skill account linking information, using the skill ID displayed in the deploy step:
         ```shell
@@ -90,4 +74,4 @@ Once created, take note of the OAuth2 credentials and update the Web Settings as
     * Tap "Enable to Use" and go through the account linking process
     * Grant the Lists Read/Write Access permissions
 
-5. That should be it! Now, just say to your Echo device: "*Alexa, add milk and eggs to my shopping list*". You should see two events forwarded to your custom endpoint. Use the information provided to do whatever you want to do with the Alexa API.
+5. That should be it! Now, just say to your Echo device: "*Alexa, add milk and eggs to my shopping list*". You should see two events forwarded to your custom endpoint. Use the information provided to do whatever you want to do with the [Alexa List Management API](https://developer.amazon.com/en-US/docs/alexa/list-skills/list-management-api-reference.html).
