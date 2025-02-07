@@ -1,5 +1,8 @@
 # alexa-lists-event-forwarder
 
+Amazon appears to have discontinued the APIs that this module requires, so it's unlikely to work going forward. <img width="673" alt="image" src="https://github.com/user-attachments/assets/04d6a09a-803c-4091-9c03-bf43666e7a8b" />
+
+
 ## Introduction
 
 This provides a way to get out of the Alexa system with your shopping lists and to-dos on Echo devices. Provide your own custom endpoint to send all item and list changes to, and do whatever you want with that information.
